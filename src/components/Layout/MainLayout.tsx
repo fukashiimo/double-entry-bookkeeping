@@ -83,7 +83,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
             size="sm"
             color="white"
           />
-          <Title order={3} c="white" style={{ fontWeight: 500 }}>管理パネル</Title>
+          <Title order={3} c="white" style={{ fontWeight: 500 }}>複式簿記</Title>
         </Group>
       </AppShell.Header>
 
