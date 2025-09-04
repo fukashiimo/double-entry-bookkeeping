@@ -5,7 +5,7 @@ import { IconTrash, IconCopy } from '@tabler/icons-react';
 import 'dayjs/locale/ja';
 
 interface JournalEntryFormProps {
-  onSubmit: (data: any) => void;
+  onSubmit: (data: { date: Date | null; [key: string]: unknown }) => void;
 }
 
 export const JournalEntryForm = ({ onSubmit }: JournalEntryFormProps) => {

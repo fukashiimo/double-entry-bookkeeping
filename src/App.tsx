@@ -11,7 +11,7 @@ import AccountSettings from './pages/AccountSettings';
 import { theme } from './theme/theme';
 
 function App() {
-  const handleSubmit = (data: any) => {
+  const handleSubmit = (data: { date: Date | null; [key: string]: unknown }) => {
     console.log('Form submitted:', data);
   };
 

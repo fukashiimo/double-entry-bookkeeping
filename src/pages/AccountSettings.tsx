@@ -175,7 +175,7 @@ export default function AccountSettings() {
         zIndex={1000}
         overlayProps={{ opacity: 0.55, blur: 3 }}
         styles={{
-          modal: {
+          content: {
             position: 'fixed',
             top: '50%',
             left: '50%',
@@ -195,7 +195,7 @@ export default function AccountSettings() {
           <Select
             label="資産・負債・純資産の選択"
             placeholder="種類を選択してください"
-            data={Object.entries(ACCOUNT_TYPES).map(([_, value]) => ({ value, label: value }))}
+            data={Object.entries(ACCOUNT_TYPES).map(([, value]) => ({ value, label: value }))}
             value={selectedType}
             onChange={setSelectedType}
             disabled={!!editingAccount}
