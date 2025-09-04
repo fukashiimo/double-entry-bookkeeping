@@ -103,18 +103,16 @@ export default function MainLayout({ children }: MainLayoutProps) {
         </Box>
       </AppShell.Navbar>
 
-      <AppShell.Main 
-        style={(theme) => ({
-          backgroundColor: theme.colors.gray[0],
-          padding: theme.spacing.xl,
-        })}
-      >
+      <AppShell.Main>
         <Box
-                  style={() => ({
-          maxWidth: '1400px',
-          margin: '0 auto',
-          width: '100%',
-        })}
+          style={(theme) => ({
+            maxWidth: '1400px',
+            margin: '0 auto',
+            width: '100%',
+            backgroundColor: theme.colors.gray[0],
+            padding: theme.spacing.xl,
+            minHeight: 'calc(100vh - 70px)',
+          })}
         >
           {children}
         </Box>
