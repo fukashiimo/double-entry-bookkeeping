@@ -170,24 +170,14 @@ export default function AccountSettings() {
           setAccountName('');
         }}
         title={editingAccount ? "勘定科目の編集" : "勘定科目の追加"}
-        size="md"
+        size="lg"
         centered
-        zIndex={1000}
+        zIndex={2000}
         overlayProps={{ opacity: 0.55, blur: 3 }}
         styles={{
           content: {
-            position: 'fixed',
-            top: '50%',
-            left: '50%',
             transform: 'translate(-50%, -50%)',
-            margin: 0,
-          },
-          overlay: {
             position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
           }
         }}
       >
