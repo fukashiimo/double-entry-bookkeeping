@@ -5,12 +5,10 @@ import {
   Paper,
   Button,
   Group,
-  Text,
   ActionIcon,
   Modal,
   Select,
   TextInput,
-  Divider,
   List,
   Box,
   Menu,
@@ -75,7 +73,7 @@ export default function AccountSettings() {
 
     setAccounts(prev => ({
       ...prev,
-      [selectedType]: [...prev[selectedType], newAccount],
+      [selectedType]: [...(prev[selectedType as keyof typeof prev] || []), newAccount],
     }));
 
     setSelectedType(null);
@@ -95,7 +93,7 @@ export default function AccountSettings() {
 
     setAccounts(prev => ({
       ...prev,
-      [editingAccount.type]: prev[editingAccount.type].map(account =>
+      [editingAccount.type]: (prev[editingAccount.type as keyof typeof prev] || []).map((account: { id: number; name: string }) =>
         account.id === editingAccount.id ? { ...account, name: accountName } : account
       ),
     }));
@@ -108,7 +106,7 @@ export default function AccountSettings() {
   const handleDeleteAccount = (type: string, accountId: number) => {
     setAccounts(prev => ({
       ...prev,
-      [type]: prev[type].filter(account => account.id !== accountId),
+      [type]: (prev[type as keyof typeof prev] || []).filter((account: { id: number; name: string }) => account.id !== accountId),
     }));
   };
 

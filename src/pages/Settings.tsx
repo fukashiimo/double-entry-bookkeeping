@@ -1,11 +1,11 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Title } from '@mantine/core';
 
 const Settings = () => {
   return (
     <Box>
-      <Typography variant="h4" component="h1" gutterBottom>
+      <Title order={1} mb="md">
         設定
-      </Typography>
+      </Title>
     </Box>
   );
 };

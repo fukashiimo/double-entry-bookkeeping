@@ -1,6 +1,5 @@
-import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { AppShell, Burger, Group, Title, UnstyledButton, Text, Box, rem, Stack } from '@mantine/core';
+import { AppShell, Burger, Group, Title, UnstyledButton, Text, Box, Stack } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { 
   IconDashboard, 
@@ -105,15 +104,15 @@ export default function MainLayout({ children }: MainLayoutProps) {
       <AppShell.Main 
         style={(theme) => ({
           backgroundColor: theme.colors.gray[0],
-          padding: theme.spacing.xl * 1.5,
+          padding: theme.spacing.xl,
         })}
       >
         <Box
-          style={(theme) => ({
-            maxWidth: '1400px',
-            margin: '0 auto',
-            width: '100%',
-          })}
+                  style={() => ({
+          maxWidth: '1400px',
+          margin: '0 auto',
+          width: '100%',
+        })}
         >
           {children}
         </Box>

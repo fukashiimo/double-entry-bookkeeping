@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, TextInput, NumberInput, Textarea, Button, Select, Grid, Paper, Title, ActionIcon } from '@mantine/core';
+import { Box, NumberInput, Textarea, Button, Select, Grid, Paper, Title, ActionIcon } from '@mantine/core';
 import { DateInput } from '@mantine/dates';
 import { IconTrash, IconCopy } from '@tabler/icons-react';
 import 'dayjs/locale/ja';

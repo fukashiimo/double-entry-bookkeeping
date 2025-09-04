@@ -125,7 +125,6 @@ const Dashboard = () => {
                         data={incomeData}
                         withLabels
                         labelsType="percent"
-                        donut
                         tooltipDataSource="segment"
                         valueFormatter={(value) => `¥${value.toLocaleString()}`}
                       />
@@ -140,7 +139,6 @@ const Dashboard = () => {
                         data={expenseData}
                         withLabels
                         labelsType="percent"
-                        donut
                         tooltipDataSource="segment"
                         valueFormatter={(value) => `¥${value.toLocaleString()}`}
                       />

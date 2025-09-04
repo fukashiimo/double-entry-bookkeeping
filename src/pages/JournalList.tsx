@@ -11,7 +11,6 @@ import {
   Menu,
   ActionIcon,
   Text,
-  Badge,
   Select,
   Grid
 } from '@mantine/core';
