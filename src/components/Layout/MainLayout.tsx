@@ -12,7 +12,7 @@ import {
 
 const mainLinks = [
   { icon: IconDashboard, label: 'ダッシュボード', path: '/' },
-  { icon: IconBook, label: '仕訳一覧', path: '/journal-list' },
+  { icon: IconBook, label: '仕訳帳', path: '/journal-list' },
   { icon: IconPlus, label: '仕訳入力', path: '/journal-entry' },
   { icon: IconList, label: '勘定科目設定', path: '/account-settings' },
   { icon: IconChartPie, label: '財務レポート', path: '/reports' },
