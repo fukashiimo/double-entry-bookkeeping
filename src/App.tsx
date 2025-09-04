@@ -17,7 +17,7 @@ function App() {
 
   return (
     <MantineProvider theme={theme} defaultColorScheme="light">
-      <Router>
+      <Router basename="/double-entry-bookkeeping">
         <MainLayout>
           <Routes>
             <Route path="/" element={<Dashboard />} />
