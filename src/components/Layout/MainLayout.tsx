@@ -69,9 +69,10 @@ export default function MainLayout({ children }: MainLayoutProps) {
       navbar={{
         width: 300,
         breakpoint: 'sm',
-        collapsed: { mobile: !opened },
+        collapsed: { mobile: !opened, desktop: false },
       }}
       padding="xl"
+      style={{ minHeight: '100vh' }}
     >
       <AppShell.Header>
         <Group h="100%" px="xl" style={{ backgroundColor: 'var(--mantine-color-indigo-6)' }}>
@@ -91,6 +92,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
         style={(theme) => ({
           backgroundColor: theme.white,
           borderRight: `1px solid ${theme.colors.gray[2]}`,
+          zIndex: 1000,
         })}
       >
         <Box p="md">
